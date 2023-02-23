@@ -5,6 +5,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>HHhH</title>
       <link rel="shortcut icon" href="-/favicon.png" type="image/png">
+	
+	<script>
+window.onbeforeunload = function(e) {
+    var msg = 'Стойте, не уходите!';
+    if(typeof e == "undefined")
+        e = window.event;
+    if(e)
+        e.returnValue = msg;
+    return msg;
+}
+</script>
 	<script>
 ~function () {
   var video = document.querySelector('video')
